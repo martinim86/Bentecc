@@ -35,4 +35,6 @@ header{
 	height: 50px;
 	background-color: #003249;
 }
-
+.top-menu{
+	float: right;
+}
