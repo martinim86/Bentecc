@@ -30,11 +30,77 @@ float: left;
 .fr{
     float: right
 }
+.wrapper{
+	width: 1250px;
+	margin: 0px auto;
+}
+/*header*/
 header{
 	width: 100%;
-	height: 50px;
+}
+.wrap-menu{
 	background-color: #003249;
+	height: 100px;
+	width: 100%;
+}
+.logo{
+	float: left;
 }
 .top-menu{
 	float: right;
 }
+.nav-tabs > li.active > a{
+	height: 100px;
+}
+.nav-tabs > li > a{
+	height: 100px;
+}
+.top-menu .nav > li > a {
+	padding: 39px 24px;
+}
+/*search*/
+.search {
+	background-color: #f0edee;
+	height: 55px;
+}
+.search-form{
+	float: left;
+	margin: 10px 0px  10px 357px;
+}
+.search-form input {
+	margin-left: 10px;
+	margin-right: 15px;
+}
+.search-form .form-inline .form-control {
+	width: 250px;
+}
+.search-form .form-control{
+	border-radius: 0px;
+	border: 2px solid #000;
+	color:black;
+}
+.search-form .btn{
+	border-radius: 0px;
+	padding: 6px 28px;
+	background-color: #0593BB;
+	border: 1px solid #0593BB;
+}
+.search-dropdown {
+	float: right;
+	margin-right: 28px ;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*top-image*/
+.top-image{
+	background-image: url(../img/top-image.jpg);
+	height: 370px;
+}
+/*our goal*/
+.our-goal {
+	background-color: #f0edee;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 10px 608px;
+}
+
