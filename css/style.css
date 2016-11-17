@@ -38,9 +38,7 @@ float: left;
 header{
 	width: 100%;
 }
-.logo {
-	margin-top: 21px;
-}
+
 .wrap-menu{
 	background-color: #003249;
 	height: 100px;
@@ -49,18 +47,24 @@ header{
 .logo{
 	float: left;
 }
-.top-menu{
+.wrap-menu .navbar-default{
+	background-color: #003249;
+	border: none;
+}
+.wrap-menu .navbar-default .navbar-collapse {
 	float: right;
 }
-.nav-tabs > li.active > a{
+
+.wrap-menu .nav-tabs>li>a {
 	height: 100px;
+	color: gray;
+	    border-radius: 0;
 }
-.top-menu .nav-tabs > li > a{
+.wrap-menu .nav>li>a{
+	padding: 38px 15px;
+}
+.wrap-menu .navbar-header{
 	height: 100px;
-	border-radius: 0px;
-}
-.top-menu .nav > li > a {
-	padding: 39px 24px;
 }
 /*search*/
 .search {
@@ -100,26 +104,20 @@ header{
 	border: 2px solid #000;
 	width: 133px;
 }
-/*top-image*/
-.top-image{
-	background-image: url(../img/top-image.jpg);
-	background-repeat: no-repeat;
-	background-size:100%;
-	height: 370px;
-	color: white;
-	font-size: 30px;
-	padding-top: 167px;
-	letter-spacing: 9px;
-	font-weight: bold;
+/*slider*/
+.slider img {
+	background-size: 100%;
 }
 /*content*/
 /*our goal*/
 .our-goal {
 	background-color: #f0edee;
+	
+}
+.our-goal p{
+	text-align: center;
 	font-size: 24px;
 	font-weight: bold;
-	padding: 10px 608px;
-	text-align: center;
 }
 /*blocks*/
 .blocks .row{
@@ -130,6 +128,7 @@ header{
 	background-repeat: no-repeat;
 	height: 450px;
 	padding-top: 165px;
+	
 }
 .component-describe {
 	background-image: url(../img/zalivka.png);
@@ -156,4 +155,27 @@ header{
 	font-size: 30px;
 	font-weight: 600;
 	padding-top: 28px;
+}
+@media only screen and (min-width: 0px) and (max-width: 1250px) {
+	.wrapper{
+		width:100%;
+	}
+	.wrap-menu .navbar-collapse.collapse{
+		float: left;
+	}
+	.wrap-menu .navbar-collapse {
+		padding: 0px;
+	}
+	.our-goal {
+		background-color: #003249;
+		color: white;
+	}
+	.component{
+		width: 328px;
+	margin: 0px auto;
+	}
+	.component-describe p{
+	margin: 30px 0px 10px 0px;
+	font-weight: 500;
+	}
 }
