@@ -1,4 +1,10 @@
+@font-face {
+     
+  src: url('fonts/glyphicons-halflings-regular.woff') ,
 
+ 
+
+}
 
 body, div, img, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dd, dt,
 blockquote, fieldset, legend, label, input, textarea {
@@ -13,6 +19,10 @@ h3{font-size: 160%;}
 h4{font-size: 140%;}
 h5{font-size: 120%;}
 
+@font-face {
+ 
+ src: url('fonts/glyphicons-halflings-regular.woff'); 
+}
 
 *{
 	margin: 0;
@@ -31,7 +41,7 @@ float: left;
     float: right
 }
 .wrapper{
-	width: 1250px;
+	width: 1300px;
 	margin: 0px auto;
 }
 /*header*/
@@ -47,8 +57,10 @@ header{
 .logo{
 	float: left;
 }
-.wrap-menu .navbar-default{
+.wrap-menu .container-fluid{
 	background-color: #003249;
+}
+.wrap-menu .navbar-default{
 	border: none;
 }
 .wrap-menu .navbar-default .navbar-collapse {
@@ -66,18 +78,33 @@ header{
 .wrap-menu .navbar-header{
 	height: 100px;
 }
+.wrap-menu .navbar-brand{
+	padding-left: 0px;
+}
+.wrap-menu .navbar-toggle{
+	margin-top: 20px;
+}
+.navbar-collapse.collapse{
+	background-color: #003249;
+}
 /*search*/
+
 .search {
 	background-color: #f0edee;
 	height: 55px;
 }
+
 .search-form{
 	float: left;
 	margin: 10px 0px  10px 357px;
 }
+
 .search-form input {
 	margin-left: 10px;
 	margin-right: 15px;
+}
+.search-form .form-group{
+	float: left;
 }
 .search-form .form-inline .form-control {
 	width: 250px;
@@ -92,10 +119,17 @@ header{
 	padding: 6px 28px;
 	background-color: #0593BB;
 	border: 1px solid #0593BB;
+	float: left;
+	height: 34px;
 }
+
+.search-dropdown .search-dropdown button {
+	font-size 20px;
+}
+
 .search-dropdown {
 	float: right;
-	margin-right: 28px ;
+	margin-right: 16px ;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -103,7 +137,10 @@ header{
 	border-radius: 0px;
 	border: 2px solid #000;
 	width: 133px;
+	float:right;
+	height: 34px;
 }
+
 /*slider*/
 .slider img {
 	background-size: 100%;
@@ -118,6 +155,10 @@ header{
 	text-align: center;
 	font-size: 24px;
 	font-weight: bold;
+}
+.our-goal-item{
+	width: 90%;
+	margin: 0px auto;
 }
 /*blocks*/
 .blocks .row{
@@ -147,6 +188,9 @@ header{
 	background-color: #0593bb;
 	border-radius: 0px;
 }
+.block-slider{
+	display: none;
+}
 /*brands*/
 .brands{
 	background-color: #f0edee;
@@ -155,8 +199,65 @@ header{
 	font-size: 30px;
 	font-weight: 600;
 	padding-top: 28px;
+	color: #003249;
 }
-@media only screen and (min-width: 0px) and (max-width: 1250px) {
+.wrap-brands-icon{
+	width: 100%;
+	background-color: white;
+}
+.brands-icon-item {
+	width: 33%;
+	float: left;
+	padding: 12px 35px;
+}
+.two-brands img:first-child{
+	float: left;
+}
+.two-brands img:nth-child(2){
+	float: right;
+}
+.wrap-brands-icon img:nth-child(3){
+	margin-top: 25px;
+}
+.img-item{
+	height: 70px;
+	width: 150px;
+}
+.img-item img {
+	height: 100%;
+	width: 100%;
+}
+/*footer*/
+.footer {
+	background-color: #f0edee;
+}
+.footer .row:first-child{
+	padding: 30px 0px;
+}
+.footer p{
+	color: gray;
+	font-weight: 500;
+}
+
+.footer .row:nth-child(3){
+	padding: 10px 0px 50px 0px;
+}
+.footer .contacts ,  .footer .contacts p {
+	float: right;
+}
+.footer .adress{
+	float: left;
+}
+.footer .contacts span{
+	float: right;
+}
+.footer-social img{
+	margin-left: 10px;
+}
+.footer-social{
+	float: right;
+}
+@media only screen and (min-width: 0px) and (max-width: 1300px) {
 	.wrapper{
 		width:100%;
 	}
@@ -177,5 +278,65 @@ header{
 	.component-describe p{
 	margin: 30px 0px 10px 0px;
 	font-weight: 500;
+	}
+	.brands-icon {
+	    width: 432px;
+    margin: 0px auto;
+	}
+	.brands-icon-item {
+	width: 400px;
+	}
+/*	search*/
+	.search-form{
+	float: left;
+	margin: 10px 0px  10px 10px;
+	}
+	.search-form label{
+	display: none;
+	}
+	.search-form input {
+	margin-right: 0px;
+	}
+	.search-form .form-inline .form-control {
+	width: 166px;
+	}
+	.search-dropdown .btn{
+	border-radius: 0px;
+	border: 2px solid #000;
+	width: 83px;
+	padding: 6px 5px;
+	}
+	.search-form .form-control{
+	border-right: 0px;
+	}
+	.slider {
+		display: none;
+	}
+	/*footer*/
+	.footer{
+		padding-left: 10px;
+	}
+	.container-fluid:after{
+		clear:inherit !important;
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+	.footer .contacts span{
+	float: left;
+	}
+	.footer .contacts ,  .footer .contacts p {
+	float: left;
+	}
+	.footer-social{
+	float: left;
+	}
+	.blocks .row{
+		display: none;
+	}
+	.block-slider{
+	display: block;
+	}
+	.carousel-control.left, .carousel-control.right{
+		background-image: none !important;
 	}
 }
